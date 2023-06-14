@@ -1,0 +1,31 @@
+﻿<Window x:Class="Calculadora_Basica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculadora_Basica"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/calculator-on-a-white-background-free-vector.jpg"/>
+        </Grid.Background>
+        <Button Content="3" HorizontalAlignment="Left" Margin="404,268,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="=" Margin="485,268,0,0" VerticalAlignment="Top" Width="69" Height="78" FontSize="24" RenderTransformOrigin="0.167,1.981" HorizontalAlignment="Left" FontWeight="Bold"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="324,268,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="244,268,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="244,226,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="324,226,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="404,226,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="244,183,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="324,183,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="404,183,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="244,311,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="324,311,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="404,311,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="x" HorizontalAlignment="Left" Margin="484,226,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="484,183,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Center" Height="50" Margin="0,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="267"/>
+
+    </Grid>
+</Window>
