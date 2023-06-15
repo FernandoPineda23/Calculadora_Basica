@@ -24,5 +24,78 @@ namespace Calculadora_Basica
         {
             InitializeComponent();
         }
+        public void ButtonClick(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Button button = (Button)sender;
+
+                string value = (string)button.Content;
+
+                if (Isnumber(value))
+                {
+                    HandleNumbers(value);
+                }
+                else if (IsOperator(value))
+                {
+                    HandleOperator(value);
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception ("Sucedio un error "+ex.Message);
+            }
+        }
+
+
+        //Metodos auxiliares
+
+        private bool Isnumber(string number)
+        {
+            return double.TryParse(number, out _);
+        }
+
+        private void HandleNumbers(string value)
+        {
+            if (String.IsNullOrEmpty(Screen.Text))
+            {
+                Screen.Text=value;
+            }
+            else
+            {
+                Screen.Text += value;
+            }
+
+        }
+
+        private bool IsOperator(string posibleOperator)
+        {
+            //PRIMERA FORMA
+           /* if (posibleOperator == "+" || posibleOperator == "-"
+                || posibleOperator == "*" || posibleOperator == "/")
+            {
+                return true;
+            }
+            return false;*/
+
+            //SEGUNDA FORMA
+            return posibleOperator == "+" || posibleOperator == "-"
+                || posibleOperator == "*" || posibleOperator == "/";
+
+
+        }
+
+        private void HandleOperator(string value)
+        {
+            if (!String.IsNullOrEmpty(Screen.Text))
+            {
+                Screen.Text += value;
+            }
+        }
+
     }
+
 }
