@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculadora_Basica"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="761">
+        Title="MainWindow" Height="482" Width="430">
 
     <Window.Resources>
 
         <!-- Propiedades por defecto de los botones -->
         <Style TargetType="Button">
-            <Setter Property="Background" Value="AliceBlue"/>
+            <Setter Property="Background" Value="Gray"/>
             <Setter Property="Margin" Value="2"/>
             <Setter Property="Padding" Value="0"/>
             <Setter Property="FontSize" Value="20"/>
@@ -19,35 +19,39 @@
         </Style>
     </Window.Resources>
 
-    <Grid Height="434" VerticalAlignment="Center" HorizontalAlignment="Left" Width="800">
+    <Grid Height="362" VerticalAlignment="Center" HorizontalAlignment="Left" Width="732" Margin="68,0,0,0">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="38*"/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="319*"/>
+            <ColumnDefinition Width="365*"/>
+            <ColumnDefinition Width="18*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="30*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="5*"/>
+            <RowDefinition Height="119*"/>
+            <RowDefinition Height="240*"/>
         </Grid.RowDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="/calculator-on-a-white-background-free-vector.jpg"/>
+            <ImageBrush/>
         </Grid.Background>
-        <Button Content="3" HorizontalAlignment="Left" Margin="404,144,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="=" Margin="485,144,0,0" VerticalAlignment="Top" Width="69" Height="78" FontSize="24" RenderTransformOrigin="0.167,1.981" HorizontalAlignment="Left" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="324,144,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="1" HorizontalAlignment="Left" Margin="244,144,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="244,102,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="324,102,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="404,102,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="244,59,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="324,58,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="404,59,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="0" HorizontalAlignment="Left" Margin="244,187,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="324,187,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="404,187,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="*" HorizontalAlignment="Left" Margin="484,102,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="/" HorizontalAlignment="Left" Margin="484,59,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1"/>
-        <TextBox x:Name="Screen" HorizontalAlignment="Left" Height="75" Margin="254,90,0,0" Grid.RowSpan="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" FontSize="20"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="160,61,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button Content="=" Margin="241,61,0,0" VerticalAlignment="Top" Width="69" Height="78" FontSize="24" RenderTransformOrigin="0.167,1.981" HorizontalAlignment="Left" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="80,61,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="0,61,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="0,19,0,0" VerticalAlignment="Top" Width="70" Height="34" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="80,19,0,0" VerticalAlignment="Top" Width="70" Height="34" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="160,19,0,0" VerticalAlignment="Top" Width="70" Height="34" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="0,96,0,0" VerticalAlignment="Top" Width="70" Height="34" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="80,94,0,0" VerticalAlignment="Top" Width="70" Height="36" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="160,96,0,0" VerticalAlignment="Top" Width="70" Height="34" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="0,104,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="80,104,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="160,104,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="240,19,0,0" VerticalAlignment="Top" Width="70" Height="34" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="240,96,0,0" VerticalAlignment="Top" Width="70" Height="34" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+        <TextBox x:Name="Screen" HorizontalAlignment="Left" Height="74" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" FontSize="20" Grid.ColumnSpan="3"/>
 
     </Grid>
 </Window>
