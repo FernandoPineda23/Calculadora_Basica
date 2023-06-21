@@ -49,7 +49,10 @@ namespace Calculadora_Basica
                 {
                     HandleEquals(Screen.Text);
                 }
-
+                else if (value=="C")
+                {
+                    Screen.Text = Screen.Text.Remove(Screen.Text.Length-1);
+                }
 
 
             }
@@ -123,6 +126,16 @@ namespace Calculadora_Basica
                     case "+":
                         Screen.Text = Sum();
                         break;
+
+                    case "-": Screen.Text = Res();
+                        break;
+
+                    case "*": Screen.Text = Mul();
+                        break;
+
+                    case "/": Screen.Text = Div();
+                        break;
+
                     default:
                         break;
                 }
@@ -151,6 +164,32 @@ namespace Calculadora_Basica
 
         }
 
+        private string Res()
+        {
+            string[] number= Screen.Text.Split("-");
+            double.TryParse(number[0], out double n1);
+            double.TryParse(number[1],out double n2);
+
+            return Math.Round(n1-n2, 12).ToString();
+        }
+
+        private string Mul()
+        {
+            string[] number = Screen.Text.Split("*");
+            double.TryParse(number[0], out double n1);
+            double.TryParse(number[1], out double n2);
+
+            return Math.Round(n1 * n2, 12).ToString();
+        }
+
+        private string Div()
+        {
+            string[] number = Screen.Text.Split("/");
+            double.TryParse(number[0], out double n1);
+            double.TryParse(number[1], out double n2);
+
+            return Math.Round(n1 / n2, 12).ToString();
+        }
 
 
     }
