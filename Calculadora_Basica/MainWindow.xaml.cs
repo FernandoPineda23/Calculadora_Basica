@@ -108,7 +108,8 @@ namespace Calculadora_Basica
 
         private bool ContainsOtherOperator(string screenContent)
         {
-            return screenContent.Contains("+") || screenContent.Contains("-") || screenContent.Contains("*") || screenContent.Contains("/");
+            return screenContent.Contains("+") || screenContent.Contains("-")
+                || screenContent.Contains("*") || screenContent.Contains("/");
         }
 
         private void HandleEquals(string screenContent)
