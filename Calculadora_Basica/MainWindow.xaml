@@ -52,6 +52,8 @@
         <Button Content="*" HorizontalAlignment="Left" Margin="240,19,0,0" VerticalAlignment="Top" Width="70" Height="34" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
         <Button Content="/" HorizontalAlignment="Left" Margin="240,96,0,0" VerticalAlignment="Top" Width="70" Height="34" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
         <TextBox x:Name="Screen" HorizontalAlignment="Left" Height="74" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" FontSize="20" Grid.ColumnSpan="3"/>
+        <Button Content="CE" HorizontalAlignment="Left" Margin="239,150,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button Content="C" HorizontalAlignment="Left" Margin="160,150,0,0" VerticalAlignment="Top" Width="70" Height="35" FontSize="24" RenderTransformOrigin="2.833,2.701" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3"/>
 
     </Grid>
 </Window>

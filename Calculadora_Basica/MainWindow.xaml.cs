@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.Xml;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -40,6 +41,15 @@ namespace Calculadora_Basica
                 {
                     HandleOperator(value);
                 }
+                else if (value=="CE")
+                {
+                    Screen.Clear();
+                }
+                else if (value=="=")
+                {
+                    HandleEquals(Screen.Text);
+                }
+
 
 
             }
@@ -90,10 +100,54 @@ namespace Calculadora_Basica
 
         private void HandleOperator(string value)
         {
-            if (!String.IsNullOrEmpty(Screen.Text))
+            if (!String.IsNullOrEmpty(Screen.Text)&& !ContainsOtherOperator(Screen.Text))
             {
                 Screen.Text += value;
             }
+        }
+
+        private bool ContainsOtherOperator(string screenContent)
+        {
+            return screenContent.Contains("+") || screenContent.Contains("-") || screenContent.Contains("*") || screenContent.Contains("/");
+        }
+
+        private void HandleEquals(string screenContent)
+        {
+
+            string op = FindOperator(screenContent);
+            if(!String.IsNullOrEmpty(op))
+            {
+                switch (op)
+                {
+                    case "+":
+                        Screen.Text = Sum();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        private string FindOperator(string screenContent)
+        {
+            foreach (var c in screenContent)
+            {
+                if (IsOperator(c.ToString()))
+                {
+                    return c.ToString();
+                }
+            }
+            return " ";
+        }
+
+        private string Sum()
+        {
+            string[] number = Screen.Text.Split('+');
+            double.TryParse(number[0], out double n1);
+            double.TryParse(number[1], out double n2);
+
+            return Math.Round(n1+n2, 12).ToString();
+
         }
 
 
